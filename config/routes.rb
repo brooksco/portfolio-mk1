@@ -5,6 +5,8 @@ Folio::Application.routes.draw do
 
   match '/home' => 'pages#home'
   match '/contact' => 'pages#contact'
+  match '/photography' => 'pages#photography'
+  match '/cs' => 'pages#cs'
 
   root :to => 'pages#home'
 

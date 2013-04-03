@@ -1,16 +1,36 @@
+<script type="text/javascript">
+$(document).ready(function() {
 
+
+enquire.register("screen and (max-width:480px)", {
+
+    match : function() {
+
+    	$('#me-text').removeClass('text-cols--2');
+
+    },      // REQUIRED
+
+    unmatch : function() {
+
+    	$('#me-text').addClass('text-cols--2');
+    }, 
+
+}).listen();
+
+
+}); // end ready
+</script>
 
 
 
 
 <div id="hero-unit">
 	<div class="grid">
-		<div class="grid__item three-tenths lap-two-tenths palm-one-whole">
-		</div><div class="grid__item seven-tenths lap-eight-tenths palm-one-whole">
+		<div class="grid__item three-tenths palm-one-whole">
+		</div><div class="grid__item seven-tenths palm-one-whole">
 	<p id="hero-text">
-		The world is complicated enough without confusing and inhuman design, so let's make it simpler.
-		Let's strip away the mess and the fuss and think a little freer. I am a web designer, and I 
-		believe in getting the design out of the way.
+		Let's strip away the mess and the fuss and think a little clearer. My name is Colin Brooks, and I like
+		to make things.
 	</p>
 </div>
 </div>
@@ -19,11 +39,21 @@
 
 <div class="grid">
 	
-	
-	<div class="grid__item two-thirds">
-	Two thirds
-	</div><div class="grid__item one-third">
-	One third
+	<div class="grid__item one-quarter">
+
+		<div id="me-image">
+			<img src="/assets/me.jpg" class="img--left">
+		</div>
+
+	</div><div class="grid__item three-quarters">
+
+	<div id="me-home">
+		<h1 style="font-family: 'shadows into light'; font-size: 250%;">Me</h1>
+			<p id="me-text" class="text-cols--2">
+				I'm originally from Seattle, WA. I'm currently set to graduate this May from Grinnell College with a degree in General Science: Computer Science. I was the graphics editor for my high school newspaper, and the manager of our college darkroom. My interests have always been a bit all over the place, but I've always loved <em>creating</em> things and have never been temporally far from an art project. This past year I've been the interaction designer for a Ruby on Rails web app for the Grinnell Localfoods Coop.
+			</p>
+	</div>
+
 	</div>
 
 
