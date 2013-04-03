@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400|Shadows+Into+Light);
+@import "style";
+
+
+$dark-gray: #333;
+$medium-gray: #555;
+$light-gray: #777;
+$super-light-gray: #eee;
+
+$header-padding: 20px;
+
+html {
+}
+
+body {
+	font-family: "Quicksand";
+}
+
+#navbar {
+	text-align: center;
+	margin-bottom: 0px;
+	margin-right: 10%;
+	float: right;
+
+	li {
+		a {
+			padding: $header-padding;
+			color: $light-gray;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		a:hover {
+			background-color: $super-light-gray;
+		}
+	}
+}
+
+#hero-unit {
+	background-position: center bottom;
+  	background-size: cover;
+	background-image: url(ferry.jpg);
+	height:420px;
+}
+
+#hero-text {
+	font-size: 115%;
+	color: black;
+	margin-top: 170px;
+	margin-right: 10%;
+}
+
+#name-link {
+	text-decoration: none;
+}
+
+#name {
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-left: 10%;
+	margin-bottom: 0px;
+	color: black;
+	min-width: 200px;
+}
+
+
+
+@media (max-width: 550px) {
+
+#navbar {
+	li {
+		a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+#hero-text {
+	// margin-top: 180px;
+}
+
+}
+
+
+@include media-query(lap){ 
+	#hero-text {
+		 // margin-top: 175px;
+		 // font-size: 115%;
+	}
+}
+
+@include media-query(palm){ 
+
+	#navbar {
+		float: none;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+	#name {
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#hero-text {
+		margin-top: 100px;
+		font-size: 110%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+}
+
+
+
+
+
+
+
