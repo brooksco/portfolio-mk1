@@ -12,7 +12,8 @@ $header-padding: 20px;
 
 body {
 	font-family: "Quicksand";
-	max-width:1600px;
+	font-size: 14px;
+	max-width:1400px;
 	margin:0 auto;
 }
 
@@ -52,14 +53,13 @@ body {
 	background-color: $super-light-gray;
 }
 
+
+
 #scroll-header {
 	display: none; 
-
-}
-
-#scroll-header-content {
 	width: 100%;
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	right: 0;
 	background-color: white; // not sure about this visually
@@ -87,16 +87,6 @@ body {
 	height:420px;
 }
 
-// #hero-logo {
-// 	// background-position: center bottom;
-// 	background-size: contain;
-// 	background-repeat: no-repeat;
-// 	background-image: url(cb_1_777.png);
-// 	max-height: 200px;
-// 	width: 200px;
-// 	// width
-// 	z-index: 1;
-// }
 
 #hero-text {
 	font-size: 115%;
@@ -121,6 +111,7 @@ body {
 
 .unit-spacing {
 	margin-top: 30px;
+	padding-bottom: 10px;
 }
 
 #me-content {
@@ -137,7 +128,15 @@ body {
 #cs-content {
 	margin-top: 30px;
 	font-size: 14px;
+}
+
+#cs-header {
 	text-align: right;
+}
+
+.list-header {
+	font-weight: normal;
+	font-style: italic;
 }
 
 #contact-content {
@@ -192,11 +191,30 @@ body {
 	font-size: 250%;
 }
 
+#photo-box {
+	// float: right;
+	// max-width: 50%;
+	max-width: 800px;
+}
+
+.quote {
+	font-size: 16px;
+}
 
 
 
 
 
+
+
+
+@media (max-width: 750px) {
+
+#photography-header {
+	font-size: 175%;
+}
+
+}
 
 @media (max-width: 550px) {
 
@@ -209,12 +227,12 @@ body {
 		}
 	}
 
+	#photography-header {
+	font-size: 165%;
+	}
+
 }
 
-
-@include media-query(lap){ 
-
-}
 
 @include media-query(palm){ 
 
@@ -234,6 +252,10 @@ body {
 		float: none;
 	}
 
+	#scroll-main-header {
+		display:none;
+	}
+
 	#main-header {
 		margin-left: 0;
 		margin-right: 0;
@@ -251,6 +273,11 @@ body {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+
+	#photography-header {
+	font-size: 250%;
+}
+
 
 }
 
