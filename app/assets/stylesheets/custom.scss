@@ -8,6 +8,7 @@ $light-gray: #777;
 $super-light-gray: #eee;
 
 $header-padding: 20px;
+$section-padding: 40px;
 
 
 body {
@@ -108,16 +109,12 @@ body {
 	font-weight: normal;
 }
 
-
 .unit-spacing {
 	margin-top: 30px;
 	padding-bottom: 10px;
 }
 
-#me-content {
-	margin-top: 30px;
-	font-size: 14px;
-}
+
 
 #me-image {
 	margin-top: 30px;
@@ -125,10 +122,19 @@ body {
 	max-width: 250px;
 }
 
-#cs-content {
-	margin-top: 30px;
+
+
+#me-content, #cs-content, #contact-content {
+	padding-top: $section-padding;
 	font-size: 14px;
 }
+
+#contact-content {
+	text-align: center;
+}
+
+
+
 
 #cs-header {
 	text-align: right;
@@ -139,9 +145,6 @@ body {
 	font-style: italic;
 }
 
-#contact-content {
-	text-align: center;
-}
 
 .gray {
 	background-color: $super-light-gray;
@@ -200,7 +203,6 @@ body {
 .quote {
 	font-size: 16px;
 }
-
 
 
 

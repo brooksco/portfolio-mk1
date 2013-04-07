@@ -7,7 +7,9 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'jquery-rails'
-# gem 'mail_form'
+# gem 'contact_us'
+ gem 'mail_form'
+
 
 
 # Gems used only for assets and not required
