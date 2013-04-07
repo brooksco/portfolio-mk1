@@ -163,7 +163,7 @@ $(document).ready(function() {
 	<div class="margin-five">
 		<div class="unit-spacing">
 
-			<div class="grid__item one-third palm-one-whole">
+			<div class="grid__item one-third lap-one-half palm-one-whole">
 
 				
 				<h1 id="photography-header" class="clean-header">Photography</h1>
@@ -190,7 +190,7 @@ $(document).ready(function() {
 					I update my <a href="http://www.flickr.com/pandadumpster">Flickr</a> regularly.
 				</p>
 
-			</div><div class="grid__item two-thirds palm-one-whole">
+			</div><div class="grid__item two-thirds lap-one-half palm-one-whole">
 
 			<div id="photo-box">
 				<div class="flexslider">
@@ -244,15 +244,25 @@ $(document).ready(function() {
 				<div id="contact-content">
 					<h1 id="contact-header" class="clean-header">Contact Me</h1>
 					<p id="contact-text">
+						Email me, call me, mail me stuff...whatever floats your boat floats mine. <br>1215 Elm St Apt #2, Grinnell IA, 50112. 206-999-3131.
+					</p>
+						<%= form_for @contact_form do |f| %>
+						
+						<%= f.label :name, :class => "contact-label" %>
+						<%= f.text_field :name, :id => "contact-name" %>
+						<br>
+						<%= f.label :from, "Email", :class => "contact-label" %>
+						<%= f.text_field :from, :id => "contact-email" %>
+						<br>
+						<%= f.label :message, :class => "contact-label" %>
+						<%= f.text_area :message, :id => "contact-message" %>
+						<br>
 
-						<!--  form_for @contact_form do |f| 
-						f.text_field :name  
-						 f.text_field :email 
-						 end  -->
-						Form will go here. Also, add another big nice image here.
+						<%= f.submit :id => "contact-submit", :class => "btn btn--hard", :value => "Send it" %>
+						<% end %>
+						
 						<br>
 						
-					</p>
 				</div>
 			</div>
 		</div>

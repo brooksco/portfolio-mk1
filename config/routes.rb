@@ -8,12 +8,13 @@ Folio::Application.routes.draw do
   get "pages/contact"
 
   match '/home' => 'pages#home'
-  match '/contact' => 'pages#contact'
-  match '/photography' => 'pages#photography'
-  match '/cs' => 'pages#cs'
+  # match '/contact' => 'pages#contact'
+  # match '/photography' => 'pages#photography'
+  # match '/cs' => 'pages#cs'
 
   root :to => 'pages#home'
 
+  resources :contact_forms, :only => [:new, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

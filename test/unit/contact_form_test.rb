@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ContactFormControllerTest < ActionController::TestCase
+class ContactFormTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

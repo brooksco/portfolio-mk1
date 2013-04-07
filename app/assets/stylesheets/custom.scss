@@ -7,6 +7,8 @@ $medium-gray: #555;
 $light-gray: #777;
 $super-light-gray: #eee;
 
+$friendly-blue: #38B2CE;
+
 $header-padding: 20px;
 $section-padding: 40px;
 
@@ -129,11 +131,63 @@ body {
 	font-size: 14px;
 }
 
+
+
 #contact-content {
-	text-align: center;
+	 text-align: center;
 }
 
+#contact-text {
+	margin-left: auto;
+	margin-right: auto;
+	// text-align: left;
+	width: 100%;
+	max-width: 600px;
+}
 
+.contact-label {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4px;
+	width: 100%;
+	max-width: 600px;
+	font-size: 16px;
+	color: $light-gray;
+}
+
+#contact-name, #contact-email, #contact-message {
+	width: 100% !important;
+	max-width: 600px !important;
+	margin-bottom: 10px !important;
+}
+
+#contact-message {
+	height: 200px;
+}
+
+#contact-submit {
+	background-color: $friendly-blue;
+	color: white;
+	font-size: 16px;
+	margin-top: 10px;
+
+}
+
+#contact-submit:hover {
+	background-color: #04819E;
+}
+
+input, textarea {
+    border:0px solid $super-light-gray;
+    padding:5px; 
+}
+
+input:focus, textarea:focus { 
+    outline: none;
+    border-color: $friendly-blue;
+    box-shadow:0 0 10px 4px #9ecaed;
+}
 
 
 #cs-header {
