@@ -16,8 +16,16 @@ $section-padding: 40px;
 body {
 	font-family: "Quicksand";
 	font-size: 14px;
-	max-width:1400px;
-	margin:0 auto;
+}
+
+
+
+.unit-spacing {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	max-width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .margin-five {
@@ -98,6 +106,21 @@ body {
 	margin-right: 10%;
 }
 
+#closer-unit {
+	background-position: center bottom;
+	background-size: cover;
+	background-image: url(spit_sunset.jpg);
+	height:400px;
+}
+
+#closer-text {
+	font-size: 250%;
+	text-align: right;
+	color: white;
+	padding-top: 300px;
+	padding-right: 10%;
+}
+
 #name-link {
 	text-decoration: none;
 }
@@ -111,26 +134,10 @@ body {
 	font-weight: normal;
 }
 
-.unit-spacing {
-	margin-top: 30px;
-	padding-bottom: 10px;
-}
-
-
-
 #me-image {
-	margin-top: 30px;
 	width: auto;
-	max-width: 250px;
+	max-width: 300px;
 }
-
-
-
-#me-content, #cs-content, #contact-content {
-	padding-top: $section-padding;
-	font-size: 14px;
-}
-
 
 
 #contact-content {
@@ -140,7 +147,6 @@ body {
 #contact-text {
 	margin-left: auto;
 	margin-right: auto;
-	// text-align: left;
 	width: 100%;
 	max-width: 600px;
 }
@@ -206,16 +212,10 @@ input:focus, textarea:focus {
 	margin-right: 0;
 }
 
-
-#anchor-one {
-	margin-top: 40px;
-}
-
 #main-header {
 }
 
 #main-footer {
-	margin-top: 50px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
@@ -336,10 +336,4 @@ input:focus, textarea:focus {
 
 
 }
-
-
-
-
-
-
 
