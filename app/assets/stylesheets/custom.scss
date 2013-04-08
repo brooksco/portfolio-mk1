@@ -23,6 +23,10 @@ body {
 	padding-left: 0px;
 }
 
+// .margin-correction {
+// 	margin-left: inherit;
+// }
+
 .unit-spacing {
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -295,6 +299,10 @@ input:focus, textarea:focus {
 
 
 @include media-query(palm){ 
+
+	// .margin-correction {
+	// 	margin-left: -24px !important;
+	// }
 
 	#navbar {
 		float: none;
