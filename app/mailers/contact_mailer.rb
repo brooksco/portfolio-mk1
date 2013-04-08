@@ -6,7 +6,7 @@ class ContactMailer < ActionMailer::Base
   	@name = message[:name]
   	@message = message[:message]
 
-  	mail(:to => "colinbooks@gmail.com", :reply_to => @from, :subject => "Contact Form")
+  	mail(:to => "colinbooks@gmail.com", :from => @from, :reply_to => @from, :subject => "Contact Form")
   end
   	
 

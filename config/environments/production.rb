@@ -68,4 +68,18 @@ Folio::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
-end
+
+  config.action_mailer.default_url_options = {:host => "colinbrooks.herokuapp.com"}
+
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'], 
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'colinbrooks.heroku.com',
+    :authentication => :plain,
+  }
+
+  ActionMailer::Base.delivery_method = :smtp
+
+  end
