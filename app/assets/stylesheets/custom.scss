@@ -12,10 +12,14 @@ $friendly-blue: #38B2CE;
 $header-padding: 20px;
 $section-padding: 40px;
 
+$small-font: 14px;
+$medium-font: 16px;
+$large-font: 18px;
+
 
 body {
 	font-family: "Quicksand";
-	font-size: 14px;
+	font-size: $medium-font;
 }
 
 // this shouldn't be necessary, but it's causing problems
@@ -57,7 +61,7 @@ body {
 			padding: $header-padding;
 			color: $light-gray;
 			text-decoration: none;
-			font-size: 14px;
+			font-size: $medium-font;
 			background-color: white;
 		}
 
@@ -166,7 +170,7 @@ body {
 	margin-bottom: 4px;
 	width: 100%;
 	max-width: 600px;
-	font-size: 16px;
+	font-size: $large-font;
 	color: $light-gray;
 }
 
@@ -183,7 +187,7 @@ body {
 #contact-submit {
 	background-color: $friendly-blue;
 	color: white;
-	font-size: 16px;
+	font-size: $large-font;
 	margin-top: 10px;
 
 }
@@ -232,7 +236,7 @@ input:focus, textarea:focus {
 	ul {
 		li {
 			padding: 10px;
-			font-size: 14px;
+			font-size: $medium-font;
 		}
 	}
 }
@@ -263,7 +267,7 @@ input:focus, textarea:focus {
 }
 
 .quote {
-	font-size: 16px;
+	font-size: $large-font;
 }
 
 
@@ -315,7 +319,7 @@ input:focus, textarea:focus {
 			}
 		}
 	}
-
+ 
 	#scroll-navbar {
 		float: none;
 	}
@@ -336,8 +340,6 @@ input:focus, textarea:focus {
 	}
 
 	#hero-text {
-		// margin-top: 130px;
-		// font-size: 110%;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
