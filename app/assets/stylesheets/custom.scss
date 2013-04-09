@@ -12,9 +12,14 @@ $friendly-blue: #38B2CE;
 $header-padding: 20px;
 $section-padding: 40px;
 
-$small-font: 14px;
-$medium-font: 16px;
-$large-font: 18px;
+// 14 px = 0.875em
+// 15 px = 0.938em
+// 16 px = 1em
+// 17 px = 1.063em
+
+$small-font: 90%;
+$medium-font: 95%;
+$large-font: 105%;
 
 
 body {
@@ -111,7 +116,7 @@ body {
 
 
 #hero-text {
-	font-size: 150%;
+	font-size: 140%;
 	color: $dark-gray;
 	margin-top: 190px;
 	margin-right: 10%;
@@ -304,9 +309,6 @@ input:focus, textarea:focus {
 
 @include media-query(palm){ 
 
-	// .margin-correction {
-	// 	margin-left: -24px !important;
-	// }
 
 	#navbar {
 		float: none;
