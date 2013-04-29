@@ -4,8 +4,6 @@
 
 $(document).ready(function() {
 
-	// $('#ri-grid').gridrotator();
-
 	enquire.register("screen and (max-width:480px)", {
 
 		match : function() {
@@ -47,9 +45,8 @@ $(document).ready(function() {
 
 <section id="anchor-one" name="anchor-one">
 <div class="grid">
+
 	<div class="margin-five">
-
-
 		<div class="unit-spacing">
 
 			<div class="grid__item one-quarter">
@@ -85,8 +82,8 @@ $(document).ready(function() {
 
 			<div class="grid__item one-whole">
 
-				<div id="cs-content">
-					<h1 id="cs-header" class="clean-header">CS</h1>
+					<h1 id="design-header" class="clean-header">Design</h1>
+
 					<p>
 						<em class="quote">
 							"No sensible decision can be made any longer without taking into account not only the world as it is, but the world as it will be." - Isaac Asimov
@@ -94,63 +91,49 @@ $(document).ready(function() {
 					</p>
 					
 					<p>
-						With my major primarily centered around computer science, I've learned with a variety of languages and technologies. Just as importantly, I've worked with a wide variety of people through peer-programming and group projects. This past academic year I've been working heavily on building a new web application for the Grinnell Localfoods Coop, thinking a lot about design principals and practices. I've nominally been the "user interaction" designer, but with such a small team that and the other roles are often more expansive.
+						My experience has run the gamut from Graphics & Layout Editor for my high school newspaper, to User Interaction Designer for a local food cooperative's webapp-rebuild the last 6 months. I've worked with a variety of languages and technologies, and just as importantly a wide variety of people through peer-programming and group projects.
+
 					</p>
-					<p>
-						More generally my experience includes:
-					</p>
+
+					
  
 
 					<div class="grid">
 						<div class="grid__item one-third palm-one-whole">
+							<p>I have worked with, under, or around:</p>
 							<p>
-								<h5 class="list-header">Code</h5>
 								<ul>
-									<li>C</li>
-									<li>Java</li>
-									<li>Scheme</li>
-									<li>Ruby & Ruby on Rails</li>
 									<li>HTML5 & CSS3</li>
+									<li>Ruby & Ruby on Rails</li>
 									<li>LESS & SASS/SCSS</li>
 									<li>Javascript</li>
 									<li>Jquery</li>
+									<li>Java</li>
+									<li>C</li>
+									<li>SQL</li>
 									<li>Twitter Bootstrap</li>
 									<li>Inuit.css</li>
+									<li>Agile Development</li>
+									<li>Git & GitHub</li>
+									<li>WordPress</li>
 								</ul>
 
 							</p>
-						</div><div class="grid__item one-third palm-one-whole">
-						<p>
-							<h5 class="list-header">Management</h5>
-							<ul>
-								<li>Agile Development</li>
-								<li>SQL</li>
-								<li>Git & GitHub</li>
-								<li>WordPress</li>
-								<li>Google for nonprofits</li>
-								<li>Salesforce.com</li>
-							</ul>
-
-						</p>
-
-					</div><div class="grid__item one-third palm-one-whole">
+						</div><div class="grid__item two-thirds palm-one-whole">
+						<p><- To be filled with thumbnail links to projects -></p>
 					<p>
-						<h5 class="list-header">Projects</h5>
 						<ul>
-							<li>Grinnell Localfoods Coop web app</li>
+
+							<!-- <li>Grinnell Localfoods Coop web app</li>
 							<li>Evaluating CRM software for a nonprofit</li>
 							<li>Transitioning a nonprofit to Google apps & services, including training</li>
-							<li>This site</li>
+							<li>This site</li> -->
 						</ul>
 
 					</p>
 					
 				</div>
 			</div>
-
-
-
-		</div>
 	</div>
 </div>
 </div>
@@ -259,7 +242,7 @@ $(document).ready(function() {
 						<%= f.text_area :message, :id => "contact-message" %>
 						<br>
 
-						<%= f.submit :id => "contact-submit", :class => "btn btn--hard", :value => "Send it" %>
+						<%= f.submit :id => "contact-submit", :class => "btn btn--hard", :value => "Send it!" %>
 						<% end %>
 						
 						<br>
