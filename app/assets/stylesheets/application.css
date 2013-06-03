@@ -3,4 +3,6 @@
  *= require custom
  *= require responsiveslides
  *= require flexslider
+ *= require bootstrap
+ *= require jquery.fancybox
  */ 

@@ -4,10 +4,23 @@
 
 $(document).ready(function() {
 
-	enquire.register("screen and (max-width:480px)", {
+	$(".fancybox").fancybox();
 
-		match : function() {
-			$('#me-text').removeClass('text-cols--2');
+	// $(".fancybox")
+ //    .attr('rel', 'gallery')
+ //    .fancybox({
+ //        type: 'iframe',
+ //        autoSize : true,
+ //        beforeLoad : function() {         
+ //            this.width  = parseInt(this.element.data('fancybox-width'));  
+ //            this.height = parseInt(this.element.data('fancybox-height'));
+ //        }
+ //    });
+
+enquire.register("screen and (max-width:480px)", {
+
+	match : function() {
+		$('#me-text').removeClass('text-cols--2');
     },      // REQUIRED
 
     unmatch : function() {
@@ -18,10 +31,11 @@ $(document).ready(function() {
 
 
 
-	$('.flexslider').flexslider({
-		animation: "slide",
-		controlNav: "thumbnails"
-	});
+$('.flexslider').flexslider({
+	animation: "slide",
+	controlNav: "thumbnails"
+});
+
 
 
 }); // end ready
@@ -36,6 +50,8 @@ $(document).ready(function() {
 		</div><div class="grid__item two-thirds palm-one-whole">
 		<p id="hero-text">
 			My name is Colin Brooks, and I like to make things.
+			<br>
+			(including this website which isn't done)
 		</p>
 	</div>
 </div>
@@ -44,96 +60,184 @@ $(document).ready(function() {
 
 
 <section id="anchor-one" name="anchor-one">
-<div class="grid">
+	<div class="grid">
 
-	<div class="margin-five">
-		<div class="unit-spacing">
+		<div class="margin-five">
+			<div class="unit-spacing">
 
-			<div class="grid__item one-quarter">
+				<div class="grid__item one-quarter">
 
+					<div id="me-image">
+						<img src="/assets/swirl_arrow_400.jpg" class="img--left">
+					</div>
 
-				<div id="me-image">
-					<img src="/assets/swirl_arrow_400.jpg" class="img--left">
+				</div><div class="grid__item three-quarters">
+
+				<div id="me-content">	
+					<h1 class="clean-header">About Me</h1>
+
+					<p id="me-text" class="text-cols--2">
+						The longer version: I'm originally (and currently) from Seattle, WA. I'm just graduated this May from Grinnell College with a degree in General Science: Computer Science, and a concentration in Neuroscience. I've spent my summers working with at-risk youth outside of Seattle, doing art in the park with kids in Iowa, and working on the IT infrastructure at a small mental health and counseling organization. 
+						<br><br>
+						These days, I like to play designer think about how we interact with the world around us.	
+					</p>
+
 				</div>
-
-			</div><div class="grid__item three-quarters">
-
-			<div id="me-content">	
-				<h1 class="clean-header">Abstract</h1>
-				<p id="me-text" class="text-cols--2">
-					The shortenered version is, I like people, art, and technology.
-					<br><br>
-					The longer version: I'm originally from Seattle, WA. I'm currently set to graduate this May from Grinnell College with a degree in General Science: Computer Science, and a concentration in Neuroscience. My interests have always been a bit all over the place, but I've always loved creating things and have never been far from an art project. I've spent my summers working with at-risk youth outside of Seattle, doing art in the park with kids in Iowa, and working on the IT infrastructure at a small mental health and counseling organization. 
-					<br><br>
-					These days, I like to think about how we interact, and what we can interact with.
-					
-				</p>
-
 			</div>
 		</div>
 	</div>
-</div>
 </section>
 
+
+
+
+
+
+
+
+
 <section id="anchor-two" name="anchor-two" class="gray">
+	<div class="grid">
 
-	<div class="margin-five">
-		<div class="unit-spacing">
+		<div class="margin-five">
+			<div class="unit-spacing">
 
-			<div class="grid__item one-whole">
 
-					<h1 id="design-header" class="clean-header">Design</h1>
 
-					<p>
+
+				<h1 id="design-header" class="clean-header">Projects & Experience</h1>
+
+				<div class="grid__item one-third palm-one-whole">
+
+					<!-- <p>
 						<em class="quote">
 							"No sensible decision can be made any longer without taking into account not only the world as it is, but the world as it will be." - Isaac Asimov
 						</em>
-					</p>
+					</p> -->
 					
 					<p>
 						My experience has run the gamut from Graphics & Layout Editor for my high school newspaper, to User Interaction Designer for a local food cooperative's webapp-rebuild the last 6 months. I've worked with a variety of languages and technologies, and just as importantly a wide variety of people through peer-programming and group projects.
 
 					</p>
 
-					
- 
 
-					<div class="grid">
-						<div class="grid__item one-third palm-one-whole">
-							<p>I have worked with, under, or around:</p>
-							<p>
-								<ul>
-									<li>HTML5 & CSS3</li>
-									<li>Ruby & Ruby on Rails</li>
-									<li>LESS & SASS/SCSS</li>
-									<li>Javascript</li>
-									<li>Jquery</li>
-									<li>Java</li>
-									<li>C</li>
-									<li>SQL</li>
-									<li>Twitter Bootstrap</li>
-									<li>Inuit.css</li>
-									<li>Agile Development</li>
-									<li>Git & GitHub</li>
-									<li>WordPress</li>
-								</ul>
 
-							</p>
-						</div><div class="grid__item two-thirds palm-one-whole">
-						<p><- To be filled with thumbnail links to projects -></p>
+					<p>I have worked with, under, or around:</p>
 					<p>
 						<ul>
-
-							<!-- <li>Grinnell Localfoods Coop web app</li>
-							<li>Evaluating CRM software for a nonprofit</li>
-							<li>Transitioning a nonprofit to Google apps & services, including training</li>
-							<li>This site</li> -->
+							<li>HTML5 & CSS3</li>
+							<li>Ruby & Ruby on Rails</li>
+							<li>LESS & SASS/SCSS</li>
+							<li>Javascript</li>
+							<li>Jquery</li>
+							<li>Java</li>
+							<li>C</li>
+							<li>SQL</li>
+							<li>Twitter Bootstrap</li>
+							<li>Inuit.css</li>
+							<li>Agile Development</li>
+							<li>Git & GitHub</li>
+							<li>WordPress</li>
 						</ul>
 
 					</p>
-					
+				</div><div class="grid__item two-thirds palm-one-whole">
+
+
+
+		<!-- 		<div class="portfolio-image">
+					<a class="fancybox" rel="group" href="assets/half-full-800.jpg">
+						<img src="assets/half-full.jpg" alt="" /></a>
+					</div>
+
+<div style="width: auto; background-color: orange;">
+					<ul style="text-align: center; width: 100%; white-space: nowrap; margin: 0; padding: 0; background-color: blue;">
+
+						<li style="display: inline; max-width: 100px; width: auto;">
+							<a class="fancybox" rel="group" href="assets/home-800.jpg" style="width: auto; max-width: 100px;">
+								<img src="assets/home-800.jpg" alt="" style="max-width: 200px; width: 100%;";/>
+							</a>
+						</li>
+
+						
+						<li style="display: inline;">
+							<a class="fancybox" rel="group" href="assets/cart-800.jpg">
+								<img src="assets/cart-800.jpg" alt="" style="max-width: 200px;";/>
+							</a>
+						</li>
+
+						
+						<li style="display: inline;">
+							<a class="fancybox" rel="group" href="assets/add-800.jpg">
+								<img src="assets/add-800.jpg" alt="" style="max-width: 200px;";/>
+							</a>
+						</li>
+
+						
+						<li style="display: inline;">
+							<a class="fancybox" rel="group" href="assets/mobile-800.jpg">
+								<img src="assets/mobile-800.jpg" alt="" style="max-width: 200px;";/>
+							</a>	
+						</li>
+
+					</ul>	
+					</div>		 -->
+
+
+<div class="photo-box">
+				<div class="flexslider">
+					<ul class="slides">
+						<li data-thumb="assets/half-full-800.jpg">
+							<img src="assets/half-full-800.jpg" />
+						</li>
+						<li data-thumb="assets/cart-800.jpg">
+							<img src="assets/cart-800.jpg" />
+						</li>
+						<li data-thumb="assets/home-800.jpg">
+							<img src="assets/home-800.jpg" />
+						</li>
+						<li data-thumb="assets/mobile-800.jpg">
+							<img src="assets/mobile-800.jpg" />
+						</li>
+					</ul>
 				</div>
-			</div>
+			</div> 
+
+
+
+			<h3 class="clean-subheader">Grinnell Localfoods Coop</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lorem eu dolor ultrices gravida sed ac orci. Sed at viverra est. Aliquam consectetur leo a eros fringilla nec cursus neque feugiat. Proin mauris nisl, lacinia vel ornare sed, tincidunt id est. Maecenas ullamcorper elit nec libero condimentum mattis. Sed cursus dapibus nulla ut scelerisque. Donec quis nunc quis orci placerat elementum sit amet sit amet dui. Aenean suscipit nunc ut enim ultrices consequat. Praesent urna metus, accumsan sodales ullamcorper in, vehicula in eros. Proin sed sodales ante.
+			</p>
+			<p>
+				Currently being prepped for deployment, but you can visit the shakey and oft-restarted development server temporarily <a href="http://fulkerson.cs.grinnell.edu">here</a>.
+			</p>
+		</div>
+		
+
+		<div class="grid__item two-thirds lap-one-half palm-one-whole">
+			<h3 class="clean-subheader">[This] Website</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lorem eu dolor ultrices gravida sed ac orci. Sed at viverra est. Aliquam consectetur leo a eros fringilla nec cursus neque feugiat. Proin mauris nisl, lacinia vel ornare sed, tincidunt id est. Maecenas ullamcorper elit nec libero condimentum mattis. Sed cursus dapibus nulla ut scelerisque. Donec quis nunc quis orci placerat elementum sit amet sit amet dui. Aenean suscipit nunc ut enim ultrices consequat. Praesent urna metus, accumsan sodales ullamcorper in, vehicula in eros. Proin sed sodales ante.
+			</p>
+		</div><div class="grid__item one-third lap-one-half palm-one-whole">
+		<div id="this-image">
+						<img src="http://placekitten.com/400/300" class="img--right">
+					</div>
+	</div>
+	
+
+	<div class="grid__item two-thirds lap-one-half palm-one-whole">
+			<h3 class="clean-subheader">Renton Area Youth & Family Services [Current Project]</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lorem eu dolor ultrices gravida sed ac orci. Sed at viverra est. Aliquam consectetur leo a eros fringilla nec cursus neque feugiat. Proin mauris nisl, lacinia vel ornare sed, tincidunt id est. Maecenas ullamcorper elit nec libero condimentum mattis.
+			</p>
+		</div><div class="grid__item one-third lap-one-half palm-one-whole">
+		[Image goes here]
+	</div>
+	
+
+
 	</div>
 </div>
 </div>
@@ -147,36 +251,9 @@ $(document).ready(function() {
 	<div class="margin-five">
 		<div class="unit-spacing">
 
-			<div class="grid__item one-third lap-one-half palm-one-whole">
+			<div class="grid__item two-thirds lap-one-half palm-one-whole">
 
-				
-				<h1 id="photography-header" class="clean-header">Photography</h1>
-				<p id="photography-text">
-					<em class="quote">“When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.” - Ansel Adams </em>
-				</p>
-
-				<p>
-					I think photography is wonderful. The process of thinking about how to represent a moment in time or a place, and how that representation will be interpreted is something I have never grown tired of. For the last 3 and half years I've worked at the Grinnell College Darkroom, and managed it for the last 2. I've photographed for all kinds of events, and generally just like going wherever with a camera and an open attitude.
-				</p>
-				<p>
-					I have extensive experience with:
-					<ul>
-						<li>Digital cameras & equipment</li>
-						<li>Film developing & enlarging</li>
-						<li>Flashes & basic lighting</li>
-						<li>Adobe Photoshop</li>
-						<li>Adobe Lightroom</li>
-						<li>Flickr & 500px</li>
-					</ul>
-				</p>
-
-				<p>
-					If you want to see what I've done lately, I update my <a href="http://www.flickr.com/pandadumpster">Flickr</a> regularly.
-				</p>
-
-			</div><div class="grid__item two-thirds lap-one-half palm-one-whole">
-
-			<div id="photo-box">
+			<div class="photo-box">
 				<div class="flexslider">
 					<ul class="slides">
 						<li data-thumb="assets/photography/6.jpg">
@@ -208,7 +285,35 @@ $(document).ready(function() {
 			</div> 
 
 
-		</div>
+		</div><div class="grid__item one-third lap-one-half palm-one-whole">
+
+				<h1 id="photography-header" class="clean-header">Photography</h1>
+				<p id="photography-text">
+					<em class="quote">“When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.” - Ansel Adams </em>
+				</p>
+
+				<p>
+					I think photography is wonderful. The process of thinking about how to represent a moment in time or a place, and how that representation will be interpreted is something I have never grown tired of. For the last 3 and half years I've worked at the Grinnell College Darkroom, and managed it for the last 2. I've photographed for all kinds of events, and generally just like going wherever with a camera and an open attitude.
+				</p>
+				<p>
+					I have extensive experience with:
+					<ul>
+						<li>Digital cameras & equipment</li>
+						<li>Film developing & enlarging</li>
+						<li>Flashes & basic lighting</li>
+						<li>Adobe Photoshop</li>
+						<li>Adobe Lightroom</li>
+						<li>Flickr & 500px</li>
+					</ul>
+				</p>
+
+				<p>
+					If you want to see what I've done lately, I update my <a href="http://www.flickr.com/pandadumpster">Flickr</a> regularly.
+				</p>
+
+			</div>
+
+
 	</div>
 </div>
 
@@ -228,25 +333,25 @@ $(document).ready(function() {
 				<div id="contact-content">
 					<h1 id="contact-header" class="clean-header">Contact Me</h1>
 					<p id="contact-text">
-						Email me, call me, mail me stuff...whatever floats your boat floats mine. I love new challenges, and I'm always ready to learn new things.<br><br>1215 Elm St Apt #2, Grinnell IA, 50112. 206-999-3131.
+						Email me, call me, mail me stuff...whatever floats your boat floats mine. I love new challenges, and I'm always ready to learn new things.<br><br>9806 43rd PL NE, Seattle WA, 98115. 206-999-3131.
 					</p>
-						<%= form_for @contact_form do |f| %>
-						
-						<%= f.label :name, :class => "contact-label" %>
-						<%= f.text_field :name, :id => "contact-name" %>
-						<br>
-						<%= f.label :from, "Email", :class => "contact-label" %>
-						<%= f.text_field :from, :id => "contact-email" %>
-						<br>
-						<%= f.label :message, :class => "contact-label" %>
-						<%= f.text_area :message, :id => "contact-message" %>
-						<br>
+					<%= form_for @contact_form do |f| %>
 
-						<%= f.submit :id => "contact-submit", :class => "btn btn--hard", :value => "Send it!" %>
-						<% end %>
-						
-						<br>
-						
+					<%= f.label :name, :class => "contact-label" %>
+					<%= f.text_field :name, :id => "contact-name" %>
+					<br>
+					<%= f.label :from, "Email", :class => "contact-label" %>
+					<%= f.text_field :from, :id => "contact-email" %>
+					<br>
+					<%= f.label :message, :class => "contact-label" %>
+					<%= f.text_area :message, :id => "contact-message" %>
+					<br>
+
+					<%= f.submit :id => "contact-submit", :class => "btn btn--hard", :value => "Send it!" %>
+					<% end %>
+
+					<br>
+
 				</div>
 			</div>
 		</div>
@@ -275,6 +380,6 @@ $(document).ready(function() {
 
 
 
- -->
+-->
 
 

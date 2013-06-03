@@ -35,7 +35,7 @@ body {
 .unit-spacing {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	max-width: 1400px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -152,6 +152,23 @@ body {
 	max-width: 300px;
 }
 
+#this-image {
+	width: auto;
+	max-width: 250px;
+}
+
+#me-text {
+	// padding-top: 15px;
+}
+
+.portfolio-image {
+	width: auto;
+	// max-width: 800px;
+	 margin-bottom: 15px;
+	// float: left;
+	// display: inline;
+}
+
 
 #contact-content {
 	text-align: center;
@@ -261,7 +278,12 @@ input:focus, textarea:focus {
 	font-size: 250%;
 }
 
-#photo-box {
+.clean-subheader {
+	font-weight: normal;
+	font-size: 175%;
+}
+
+.photo-box {
 	// float: right;
 	// max-width: 50%;
 	max-width: 800px;
