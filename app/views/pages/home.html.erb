@@ -1,32 +1,37 @@
 <script type="text/javascript">
 
+// Once the page has loaded...
 $(document).ready(function() {
 
+// Check if the current screen is less than 480px
 	enquire.register("screen and (max-width:480px)", {
 
+		// If it is, change the text to a single column
 		match : function() {
 			$('#me-text').removeClass('text-cols--2');
     },      // REQUIRED
 
+    	// If it no longer is, change the text back to 2 columns
     unmatch : function() {
     	$('#me-text').addClass('text-cols--2');
     }, 
 
 }).listen();
 
-
+	// Start the flexsider gallery
 	$('.flexslider').flexslider({
 		animation: "slide",
 		controlNav: "thumbnails"
 	});
 
-}); // end ready
+}); // End ready
 
 </script>
 
-
+<!-- Hero unit, with anchor point zero -->
 <section name="anchor-zero" id="hero-unit">
 
+	<!-- Setup the grid -->
 	<div class="grid">
 		<div class="grid__item one-third palm-one-whole">
 		</div><div class="grid__item two-thirds palm-one-whole">
@@ -35,15 +40,18 @@ $(document).ready(function() {
 		</p>
 	</div>
 </div>
-<!-- End of anchor zero -->
+<!-- End of the hero unit, and anchor zero -->
 </section>
 
+<!-- About me info, with anchor point one -->
 <section id="anchor-one" name="anchor-one">
+	<!-- Setup the grid -->
 	<div class="grid">
-
+		<!-- Setup responsive spacing -->
 		<div class="margin-five">
 			<div class="unit-spacing">
 
+				<!-- Floating image of me, set to one quarter of the grid -->
 				<div class="grid__item one-quarter">
 
 					<div id="me-image">
@@ -55,6 +63,7 @@ $(document).ready(function() {
 				<div id="me-content">	
 					<h1 class="clean-header">About Me</h1>
 
+					<!-- Two column text format -->
 					<p id="me-text" class="text-cols--2">
 						The longer version: I'm originally (and currently) from Seattle, WA. I just graduated this May from Grinnell College with a degree in General Science: Computer Science, and a concentration in Neuroscience. I've spent my summers working with at-risk youth outside of Seattle, doing art in the park with kids in Iowa, and working on the IT infrastructure at a small mental health and counseling organization. 
 						<br><br>
@@ -65,12 +74,15 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</div>
-	<!-- End of anchor one -->
+	<!-- End of about me info, anchor one -->
 </section>
 
+<!-- Web work portfolio, with anchor point two -->
 <section id="anchor-two" name="anchor-two" class="gray">
+	<!-- Setup the grid -->
 	<div class="grid">
 
+		<!-- Setup responsive spacing -->
 		<div class="margin-five">
 			<div class="unit-spacing">
 
@@ -107,6 +119,7 @@ $(document).ready(function() {
 					</p>
 				</div><div id="localfoods-content" class="grid__item two-thirds palm-one-whole">
 
+				<!-- Localfoods image slider -->
 				<div class="photo-box">
 					<div class="flexslider">
 						<ul class="slides">
@@ -125,8 +138,7 @@ $(document).ready(function() {
 						</ul>
 					</div>
 				</div> 
-
-
+				<!-- End Localfoods image slider -->
 
 				<h3 class="clean-subheader">Grinnell Localfoods Coop</h3>
 				<p>
@@ -167,17 +179,21 @@ $(document).ready(function() {
 	</div>
 </div>
 </div>
-<!-- End of anchor two -->
+<!-- End of web work portfolio, and anchor two -->
 </section>
 
+<!-- Photography portfolio, with anchor point three -->
 <section id="anchor-three" name="anchor-three">
+	<!-- Setup the grid -->
 	<div class="grid">
 
+		<!-- Setup responsive spacing -->
 		<div class="margin-five">
 			<div class="unit-spacing">
 
 				<div class="grid__item two-thirds lap-one-half palm-one-whole">
 
+					<!-- Photography image slider -->
 					<div class="photo-box">
 						<div class="flexslider">
 							<ul class="slides">
@@ -208,7 +224,7 @@ $(document).ready(function() {
 							</ul>
 						</div>
 					</div> 
-
+					<!-- End photography image slider -->
 
 				</div><div class="grid__item one-third lap-one-half palm-one-whole">
 
@@ -240,12 +256,15 @@ $(document).ready(function() {
 		</div>
 	</div>
 </div>
-<!-- End of anchor three -->
+<!-- End of photography portfolio, and anchor three -->
 </section>
 
+<!-- Contact form, with anchor point four -->
 <section id="anchor-four" name="anchor-four" class="gray">
+	<!-- Setup the grid -->
 	<div class="grid">
 
+		<!-- Setup responsive spacing -->
 		<div class="margin-five">
 			<div class="unit-spacing">
 
@@ -278,5 +297,5 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</div>
-	<!-- End of anchor four -->
+	<!-- End of contact form, and anchor four -->
 </section>
